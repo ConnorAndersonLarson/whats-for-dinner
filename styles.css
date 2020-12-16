@@ -3,7 +3,31 @@ body {
   background-size: cover;
 }
 
+nav{
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0fb9b1;
+  background-size: 100%;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
 
+
+
+}
+
+button {
+  align-self: center;
+  float: right;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+div {
+  background-color: #95a5a6;
+  opacity: 60%;
+}
 /* font-family: 'Roboto', sans-serif;
 
 COLORS
