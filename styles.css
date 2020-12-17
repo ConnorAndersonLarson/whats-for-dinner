@@ -43,6 +43,12 @@ nav{
   background-color: #95a5a6;
 }
 
+#radio{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+
 #img{
   align-self: flex-end;
   align-content: center;
