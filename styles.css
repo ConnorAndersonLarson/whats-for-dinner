@@ -23,6 +23,18 @@ button{
   border-radius: 3px;
 }
 
+sup{
+  color: #ee5253;
+  vertical-align: super;
+}
+
+svg{
+  width: 125px;
+  height: 125px;
+  max-width:300px;
+  max-height: 300px;
+}
+
 .text{
   font-family: 'Roboto', sans-serif;
 }
@@ -52,27 +64,20 @@ button{
   right: 8%;
 }
 
-#img{
-  display: flex;
-  flex-direction: column;
-}
-
 .photobox{
   margin: 20%;
   padding: 15%;
   align-self: center;
 }
 
-svg{
-  width: 125px;
-  height: 125px;
-  max-width:300px;
-  max-height: 300px;
-}
-
 .radio{
   margin: 15px;
   margin-left: 10px;
+}
+
+#img{
+  display: flex;
+  flex-direction: column;
 }
 
 #letsCook{
@@ -87,9 +92,7 @@ svg{
   align-self: flex-end
 }
 
-#red{
-  color: #ee5253;
-}
+
 
 /* font-family: 'Roboto', sans-serif;
 
