@@ -49,10 +49,8 @@ button{
 }
 
 .buttonbox{
-  border: 1px solid blue;
   margin: 10%;
-  display: flex-inline;
-  flex-direction: column;
+  margin-left: 0;
 }
 
 .rightbox{
@@ -68,23 +66,26 @@ button{
   margin: 20%;
   padding: 15%;
   align-self: center;
-  border: 1px solid blue;
 }
 
 svg{
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   max-width:300px;
   max-height: 300px;
 }
 
 .radio{
-  margin: 10px;
+  margin: 15px;
+  margin-left: 10px;
 }
 
 #letsCook{
-  margin-left:75%;
-  margin-top: 10px;
+  margin: 10px;
+  margin-left: 0;
+  padding-left: 22%;
+  padding-right: 22%;
+  background-color: #0fb9b1;
 }
 
 #clear{
