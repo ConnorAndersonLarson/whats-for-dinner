@@ -44,5 +44,4 @@ function clearMeal() {
 function displayMeal() {
   clear.style.visibility = 'visible';
   rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text">' + randomMeal + '</h2>'
-  //rightbox.innerHTML(`<div class="buttonbox" id=${randomMeal}'answer'></div>`)
 }

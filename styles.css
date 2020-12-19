@@ -47,7 +47,7 @@ p{
 .box{
   margin-top: 4%;
   width: 36%;
-  height: 39%;
+  min-height: 48%;
   display:inline-flex;
   justify-content:center;
   background-color: rgba(225, 225, 225, .9);
@@ -63,6 +63,7 @@ p{
 .buttonbox{
   margin: 10%;
   margin-left: 0;
+  align-self: center;
 }
 
 .rightbox{
