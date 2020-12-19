@@ -2,7 +2,7 @@ var sides = document.querySelector('#side');
 var mainDish = document.querySelector('#mainDish');
 var dessert = document.querySelector('#dessert');
 var photo = document.querySelector('svg')
-var rightbox = document.querySelector('.box rightbox');
+var rightbox = document.querySelector('.photobox');
 
 var letsCook = document.querySelector('#letsCook')
 
@@ -31,5 +31,6 @@ function chooseDessert() {
 
 function displayMeal() {
   photo.style.visibility = 'hidden';
+  rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text">' + randomMeal + '</h2>'
   //rightbox.innerHTML(`<div class="buttonbox" id=${randomMeal}'answer'></div>`)
 }

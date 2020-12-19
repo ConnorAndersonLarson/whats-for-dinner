@@ -35,6 +35,10 @@ svg{
   max-height: 300px;
 }
 
+p{
+  font-style: italic;
+}
+
 .text{
   font-family: 'Roboto', sans-serif;
 }
@@ -65,9 +69,13 @@ svg{
 }
 
 .photobox{
+  width: max-content;
   margin: 20%;
   padding: 15%;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 
 .radio{
