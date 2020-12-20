@@ -12,5 +12,5 @@ _Describe the research stage_
 
 _Links to blog posts, patterns, libraries or addons used to solve this problem_
 
-#### Blog Posts
-- [How to Pull Request](https://github.com/flexyford/pull-request) Github Repo with Learning focused Pull Request Template.
+## Next Steps
+_What is the next iteration/step to be worked on?_
