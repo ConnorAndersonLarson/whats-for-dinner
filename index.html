@@ -32,10 +32,11 @@
     </div>
     <footer>
       <label for="rType" class="text">Recipe Type: </label>
-      <select id="rType" name="rType">
-        <option value="Sides">Sides</option>
-        <option value="Mains">Main Dish</option>
-        <option value="Desserts">Desserts</option>
+      <select id="rType" name="rType" onchange="selectRecipeType(this)">
+        <option disabled selected value> -- select -- </option>
+        <option value="sides">Sides</option>
+        <option value="mains">Main Dish</option>
+        <option value="desserts">Desserts</option>
       </select>
       <label for="rName" class="text"> Recipe Name: </label>
       <input type="text" id="rName" name="rName">
