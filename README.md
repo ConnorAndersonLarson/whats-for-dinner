@@ -1,7 +1,14 @@
-## Overview
+# What's For Dinner?#
+---
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+##Contributors##
+Connor Anderson-Larson
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+##Reviewers##
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+
+##Abstract##
+Create a website based on comp image whose primary function is the return of a random dish or three course meal. Comp image and proper colors were provided. Final product has the ability to complete previously listed primary functions as well as the option for users to add their own meals to the three meal categories present.  
+
+###Current Issues###  
+Text sizing on mobile devices is smaller than I like. Buttons have no animation on hover or when pressed. Currently no options to add entirely new food groups (breakfast, lunch, etc.)
