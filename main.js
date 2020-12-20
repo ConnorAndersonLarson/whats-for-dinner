@@ -2,10 +2,12 @@ var sides = document.querySelector('#side');
 var mainDish = document.querySelector('#mainDish');
 var dessert = document.querySelector('#dessert');
 var entireMeal = document.querySelector('#entireMeal')
-var photo = document.querySelector('svg')
+var photo = document.querySelector('svg');
 var rightbox = document.querySelector('.photobox');
 var clear = document.querySelector('#clear');
-var letsCook = document.querySelector('#letsCook')
+var letsCook = document.querySelector('#letsCook');
+var addRecipeButton = document.querySelector('#addRecipe');
+var footer = document.querySelector('footer');
 
 sides.addEventListener('click', chooseSide)
 mainDish.addEventListener('click', chooseMain)
@@ -13,8 +15,9 @@ dessert.addEventListener('click', chooseDessert)
 entireMeal.addEventListener('click', chooseMeal)
 letsCook.addEventListener('click', displayMeal)
 clear.addEventListener('click', clearMeal)
+addRecipeButton.addEventListener('click', displayCreator)
 
-var randomMeal = ''
+var randomMeal = '';
 
 function randomizer(foodCourse){
   return Math.floor(Math.random() * (meals[foodCourse].length-1))
@@ -43,5 +46,14 @@ function clearMeal() {
 
 function displayMeal() {
   clear.style.visibility = 'visible';
-  rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text">' + randomMeal + '</h2>'
+  rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text" style="font-size:2vw;">' + randomMeal + '</h2>'
 }
+
+function displayCreator() {
+  footer.classList.toggle('visible');
+  if (addRecipeButton.innerText === 'ADD A RECIPE') {
+    addRecipeButton.innerText = 'HIDE CREATOR'
+  } else {
+    addRecipeButton.innerText = 'ADD A RECIPE'
+  };
+};

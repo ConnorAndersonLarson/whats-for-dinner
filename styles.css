@@ -17,6 +17,19 @@ body{
   flex-wrap:wrap;
 }
 
+footer{
+  align-self: flex-end;
+  width: 100%;
+  padding: 2%;
+  padding-left: 20px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(225, 225, 225, .9);
+  opacity: 95%;
+  visibility: hidden;
+}
+
 button{
   padding:8px;
   border:none;
@@ -37,6 +50,11 @@ svg{
 
 p{
   font-style: italic;
+  font-size:2vw;
+}
+
+h2{
+
 }
 
 .text{
@@ -73,8 +91,6 @@ p{
 .photobox{
   width: max-content;
   max-width: 75%;
-  margin: 20%;
-  padding: 15%;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -83,6 +99,10 @@ p{
 .radio{
   margin: 15px;
   margin-left: 10px;
+}
+
+.visible{
+  visibility: visible;
 }
 
 #img{
@@ -107,4 +127,23 @@ p{
   margin: 25;
   bottom: 0;
   visibility: hidden;
+}
+
+#rType{
+  margin-left: 5px;
+  margin-right: 17px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+#rName{
+  margin-left: 5px;
+  margin-right: 17px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+#addNew{
+  background-color: #0fb9b1;
+  margin: 2px;
 }
