@@ -2,10 +2,13 @@ var sides = document.querySelector('#side');
 var mainDish = document.querySelector('#mainDish');
 var dessert = document.querySelector('#dessert');
 var entireMeal = document.querySelector('#entireMeal')
-var photo = document.querySelector('svg')
+var photo = document.querySelector('svg');
 var rightbox = document.querySelector('.photobox');
 var clear = document.querySelector('#clear');
-var letsCook = document.querySelector('#letsCook')
+var letsCook = document.querySelector('#letsCook');
+var addRecipeButton = document.querySelector('#addRecipe');
+var footer = document.querySelector('footer');
+var addNewRecipe = document.querySelector('#addNew');
 
 sides.addEventListener('click', chooseSide)
 mainDish.addEventListener('click', chooseMain)
@@ -13,25 +16,42 @@ dessert.addEventListener('click', chooseDessert)
 entireMeal.addEventListener('click', chooseMeal)
 letsCook.addEventListener('click', displayMeal)
 clear.addEventListener('click', clearMeal)
+addRecipeButton.addEventListener('click', displayCreator)
+addNewRecipe.addEventListener('click', addRecipe)
 
-var randomMeal = ''
+var randomMeal = '';
+var recipeType = '';
 
 function randomizer(foodCourse){
-  return Math.floor(Math.random() * (meals[foodCourse].length-1))
+  return Math.floor(Math.random() * meals[foodCourse].length)
 }
 
 function chooseSide() {
-  randomMeal = meals.sides[randomizer('sides')]
+  var meal = meals.sides[randomizer('sides')];
+  if (randomMeal === meal){
+    randomMeal = meals.sides[randomizer('sides')];
+  } else {
+    randomMeal = meal;
+  }
 }
 
 function chooseMain() {
-  randomMeal = meals.mains[randomizer('mains')]
+  var meal = meals.sides[randomizer('mains')];
+  if (randomMeal === meal){
+    randomMeal = meals.sides[randomizer('mains')];
+  } else {
+    randomMeal = meal;
+  }
 }
 
 function chooseDessert() {
-  randomMeal = meals.desserts[randomizer('desserts')]
+  var meal = meals.sides[randomizer('desserts')];
+  if (randomMeal === meal){
+    randomMeal = meals.sides[randomizer('desserts')];
+  } else {
+    randomMeal = meal;
+  }
 }
-
 function chooseMeal() {
   randomMeal = `${meals.mains[randomizer('mains')]} with a side of ${meals.sides[randomizer('sides')]} and ${meals.desserts[randomizer('desserts')]}!`
 }
@@ -42,6 +62,29 @@ function clearMeal() {
 }
 
 function displayMeal() {
-  clear.style.visibility = 'visible';
-  rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text">' + randomMeal + '</h2>'
+  if (randomMeal != '') {
+    clear.style.visibility = 'visible';
+    rightbox.innerHTML = '<p class="text"<i>You should make:</i></p><br>  <h2 class="text" style="font-size:2vw;">' + randomMeal + '</h2>'
+  } else {
+  }
+}
+
+function displayCreator() {
+  footer.classList.toggle('visible');
+  if (addRecipeButton.innerText === 'ADD A RECIPE') {
+    addRecipeButton.innerText = 'HIDE CREATOR'
+  } else {
+    addRecipeButton.innerText = 'ADD A RECIPE'
+  };
+};
+
+  function selectRecipeType(type) {
+    recipeType = type.value;
+}
+
+function addRecipe() {
+  var newFood = (document.getElementById('rName').value)
+  if (newFood != '') {
+    meals[recipeType].push(newFood)
+  }
 }
