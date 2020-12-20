@@ -1,39 +1,45 @@
 nav{
+  background-color: #0fb9b1;
   width:100%;
   padding-left: 20px;
   padding-right: 20px;
-  display:flex;
   align-self: flex-start;
+  display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0fb9b1;
 }
 
 body{
   background-image: url("./assets/burger-friends.jpg");
   background-size: cover;
+  height: 100%;
+  width: 100%;
   margin:0px;
+  position: fixed;
   display:flex;
   flex-wrap:wrap;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 
 footer{
-  align-self: flex-end;
+  background-color: rgba(225, 225, 225, .9);
+  opacity: 95%;
   width: 100%;
   padding: 2%;
-  padding-left: 20px;
+  padding-left: 5%;
+  position: fixed;
+  bottom: 0px;
   display:flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(225, 225, 225, .9);
-  opacity: 95%;
   visibility: hidden;
 }
 
 button{
-  padding:8px;
   border:none;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding:8px;
 }
 
 sup{
@@ -42,10 +48,10 @@ sup{
 }
 
 svg{
-  width: 125px;
   height: 125px;
-  max-width:300px;
+  width: 125px;
   max-height: 300px;
+  max-width:300px;
 }
 
 p{
@@ -59,29 +65,20 @@ p{
 }
 
 .box{
-  margin-top: 4%;
-  width: 36%;
-  min-height: 48%;
-  display:inline-flex;
-  justify-content:center;
   background-color: rgba(225, 225, 225, .9);
   opacity: 95%;
-  position:fixed;
-  top: 6%;
-}
-
-.leftbox{
-  left: 8%;
+  width: 35%;
+  min-height: 40%;
+  margin-top: 4%;
+  position: relative;
+  display:inline-flex;
+  justify-content:center;
 }
 
 .buttonbox{
   margin: 10%;
   margin-left: 0;
   align-self: center;
-}
-
-.rightbox{
-  right: 8%;
 }
 
 .photobox{
@@ -107,36 +104,36 @@ p{
 }
 
 #letsCook{
+  background-color: #0fb9b1;
   margin: 10px;
   margin-left: 0;
   padding-left: 22%;
   padding-right: 22%;
-  background-color: #0fb9b1;
 }
 
 #clear{
-  align-self: flex-end;
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
-  position: absolute;
-  width: 14%;
+  width: 60px;
   margin: 25;
+  position: absolute;
   bottom: 0;
+  align-self: flex-end;
   visibility: hidden;
 }
 
 #rType{
   margin-left: 5px;
   margin-right: 17px;
-  padding: 7px;
   border-radius: 3px;
+  padding: 7px;
 }
 
 #rName{
   margin-left: 5px;
   margin-right: 17px;
-  padding: 7px;
   border-radius: 3px;
+  padding: 7px;
 }
 
 #addNew{

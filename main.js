@@ -36,18 +36,18 @@ function chooseSide() {
 }
 
 function chooseMain() {
-  var meal = meals.sides[randomizer('mains')];
+  var meal = meals.mains[randomizer('mains')];
   if (randomMeal === meal){
-    randomMeal = meals.sides[randomizer('mains')];
+    randomMeal = meals.mains[randomizer('mains')];
   } else {
     randomMeal = meal;
   }
 }
 
 function chooseDessert() {
-  var meal = meals.sides[randomizer('desserts')];
+  var meal = meals.desserts[randomizer('desserts')];
   if (randomMeal === meal){
-    randomMeal = meals.sides[randomizer('desserts')];
+    randomMeal = meals.desserts[randomizer('desserts')];
   } else {
     randomMeal = meal;
   }
