@@ -37,6 +37,15 @@ footer{
 }
 
 button{
+  background-color: rgba(225, 225, 225, .9);
+  border:none;
+  border-radius: 5px;
+  padding:8px;
+  transition: background-color 0.5s linear;
+}
+
+button:hover {
+  background-color: #fcfcfc;
   border:none;
   border-radius: 5px;
   padding:8px;
@@ -111,6 +120,10 @@ p{
   padding-right: 22%;
 }
 
+#letsCook:hover {
+  background-color: #12ded4;
+}
+
 #clear{
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
@@ -120,6 +133,10 @@ p{
   bottom: 0;
   align-self: flex-end;
   visibility: hidden;
+}
+
+#clear:hover {
+  background-color: #8a8a8a;
 }
 
 #rType{
@@ -139,4 +156,8 @@ p{
 #addNew{
   background-color: #0fb9b1;
   margin: 2px;
+}
+
+#addNew:hover {
+  background-color: #12ded4;
 }
